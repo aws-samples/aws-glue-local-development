@@ -1,7 +1,10 @@
 # Glue job local development using Python
 
-Many of our customers are asking how to develop and test Glue job on a local machine to optimise the costs and have a fast feedback about correct code behaviour after doing any code change.    
-This project is a sample project of doing a simple analysis of movie's data. You can download movies.csv and ratings.csv datasets from [this location](http://files.grouplens.org/datasets/movielens/ml-latest.zip).
+This project is a sample project shows how to develop and test AWS Glue job on a local machine to optimize the costs and have a fast feedback about correct code behavior after doing any code change.
+
+We will analyze movie's data calculating the weighted average and selecting top 10 most popular movies. 
+
+You can download input files movies.csv and ratings.csv datasets from [this location](http://files.grouplens.org/datasets/movielens/ml-latest.zip).
 
 It is demonstrating:
 
@@ -35,11 +38,16 @@ This project contains 2 Spark jobs with generic Spark driver implementation.
 └── README.md
 ```
 
-### Unit tests
-The idea of the unit test is to validate the business logic correctness using pre-generated data as an input and comparing the output to the expected result. There is a unit test implementation in *tests.test_average_job.py* for example.
+## Unit tests
+The idea of the unit test is to validate the business logic correctness using pre-generated data as an input and comparing the output to the expected result. 
+
+There is a unit test implementation in *tests.test_average_job.py* for example.
+
 To be able to implement unit tests there is a need to isolate a code related to a business logic of Spark job from read/write operations. You can clearly see this isolation in *tasks.jobs.create_and_stage_top_movies* for example.
+
 Testing the read/write operations and integration with Glue runtime environment is done as a part of the integration test usually implemented with CI/CD pipeline.
 
+## Walkthrough
 
 ### Prerequisites
 1. [Install Python](https://realpython.com/installing-python/) 3.8.2 or later
@@ -113,4 +121,4 @@ python setup.py clean_all
 
 ## License
 
-This library is licensed under the MIT-0 License. See the LICENSE file.
+This library is licensed under the MIT-0 License. See the [LICENSE](https://github.com/aws-samples/aws-glue-local-development/blob/main/LICENSE) file.
