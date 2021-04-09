@@ -94,7 +94,7 @@ pip install -r requirements-test.txt
 ### Configure environment variables in the ``pytest.ini`` file.
 
 Some important config options:
-- ``PYTHONPATH``: Configure <YOUR HOME DIR>/glue-libs/spark-2.4.3-bin-spark-2.4.3-bin-hadoop2.8/python:<YOUR HOME DIR>/glue-libs/aws-glue-libs/target/AWSGlueETLPython-1.0.0.jar:$PYTHONPATH
+- ``PYTHONPATH``: Configure ``<YOUR HOME DIR>/glue-libs/spark-2.4.3-bin-spark-2.4.3-bin-hadoop2.8/python:<YOUR HOME DIR>/glue-libs/aws-glue-libs/target/AWSGlueETLPython-1.0.0.jar:$PYTHONPATH``
 - ``JAVA_HOME``: Spark requires Java 8 currently (on Linux: /usr/lib/jvm/java-1.8.0-openjdk-amd64)
 
 ### Once you're ready with the configuration you can run the test-set:

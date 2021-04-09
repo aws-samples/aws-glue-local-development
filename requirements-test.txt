@@ -1,5 +1,6 @@
 -r requirements.txt
 
+pyspark==3.0.1
 pytest-spark==0.6.0
 pytest-mock==3.5.1
 pytest-helpers-namespace==2019.1.8
