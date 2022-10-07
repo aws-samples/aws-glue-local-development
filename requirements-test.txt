@@ -1,10 +1,10 @@
 -r requirements.txt
 
-pyspark==3.0.1
+pyspark==3.3.0
 pytest-spark==0.6.0
-pytest-mock==3.5.1
-pytest-helpers-namespace==2019.1.8
+pytest-mock==3.10.0
+pytest-helpers-namespace==2021.12.29
 pytest-env==0.6.2
-awsglue3==0.0.1
+awsglue3-local==1.0.0
 pytest==6.2.2
-black~=20.8b1
+black==20.8b1
